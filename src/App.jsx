@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,  Routes, Route } from "react-router-dom"
+import {  HashRouter,   Routes, Route } from "react-router-dom"
 import Home from "./components/Home"
 import ChooseUser from "./components/ChooseUser";
 import AdminSignIn from "./components/AdminSignin";
@@ -51,7 +51,7 @@ import CheckExamSection from './pages/Teachers/Students';
 function App() {
 
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path='/' element ={<Home/>} />
         <Route path='/choose-user' element ={<ChooseUser/>} />
@@ -97,7 +97,7 @@ function App() {
         <Route  path="/teacher/events" element={<EventSection />} />
         <Route  path="/teacher/Settings" element={<TeacherProfileSection />} />
       </Routes>
-    </Router>
+    </HashRouter>
   )
 }
 
